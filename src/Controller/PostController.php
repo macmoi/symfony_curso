@@ -13,8 +13,9 @@ class PostController {
      * @Route("post/home")
      */
     public function home() {
+        $mName = 'Pruebas';
         return new Response(
-            '<html><body><h1>Pruebas</h1></body></html>'
+            "<html><body><h1>$mName</h1></body></html>"
         );
     }
 }
