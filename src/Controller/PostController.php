@@ -35,7 +35,7 @@ class PostController extends AbstractController {
     public function showPost($post)
     {
         return $this->render('posts/post.html.twig', [
-            'title' => ucwords(str_replace('-', '', $post))
+            'title' => ucwords(str_replace('-', ' ', $post))
         ]);
     }
 }
