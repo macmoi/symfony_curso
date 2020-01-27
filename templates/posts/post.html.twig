@@ -1,1 +1,31 @@
-<h1>{{ title }}</h1>
+{% extends "base.html.twig" %}
+  {% block title %}
+    {{ title }}
+  {% endblock %}
+  {% block body %}
+    <!-- Despues del "|" colocamos un filter de twig (Ver documentacion)-->
+    <h1>{{ title | upper }}</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorem,
+      accusamus omnis qui odit animi porro quod vitae culpa necessitatibus iure
+      assumenda maxime fugiat laborum! Ratione molestias quas tempore impedit.
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia perspiciatis iure asperiores,
+      laudantium eos aut unde voluptatibus temporibus sed soluta!
+      Ducimus temporibus ex hic facere praesentium ea quae quam?
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Repudiandae sit ducimus dolores distinctio,
+      sunt velit qui vel unde fugiat veritatis!
+      Suscipit dolores dolorem explicabo voluptates sapiente eveniet, vel unde quidem.
+    </p>
+
+    <blockquote>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni enim quaerat cupiditate numquam,
+      est eveniet soluta dolore odit cum nisi possimus vero, pariatur expedita,
+      ipsum autem deleniti accusantium dignissimos veniam.
+    </blockquote>
+  {% endblock %}
